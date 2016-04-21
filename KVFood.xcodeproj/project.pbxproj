@@ -1,0 +1,376 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BF3787391CC98FF8006C1122 /* KVGameScene.m in Sources */ = {isa = PBXBuildFile; fileRef = BF3787381CC98FF8006C1122 /* KVGameScene.m */; };
+		BF37873C1CC99006006C1122 /* KVLoseScene.m in Sources */ = {isa = PBXBuildFile; fileRef = BF37873B1CC99006006C1122 /* KVLoseScene.m */; };
+		BF3787421CC991CB006C1122 /* KVGameStats.m in Sources */ = {isa = PBXBuildFile; fileRef = BF3787411CC991CB006C1122 /* KVGameStats.m */; };
+		BF68D0921CC98C480082B447 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BF68D0911CC98C480082B447 /* main.m */; };
+		BF68D0951CC98C480082B447 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BF68D0941CC98C480082B447 /* AppDelegate.m */; };
+		BF68D0A01CC98C490082B447 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF68D09E1CC98C490082B447 /* Main.storyboard */; };
+		BF68D0A21CC98C490082B447 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BF68D0A11CC98C490082B447 /* Assets.xcassets */; };
+		BF68D0A51CC98C490082B447 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF68D0A31CC98C490082B447 /* LaunchScreen.storyboard */; };
+		BF68D0AE1CC98DAD0082B447 /* KVMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BF68D0AD1CC98DAD0082B447 /* KVMenuViewController.m */; };
+		BF68D0B11CC98DC10082B447 /* KVCreditsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BF68D0B01CC98DC10082B447 /* KVCreditsViewController.m */; };
+		BF68D0B41CC98DD10082B447 /* KVLeaderBoardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BF68D0B31CC98DD10082B447 /* KVLeaderBoardViewController.m */; };
+		BF68D0B71CC98DEE0082B447 /* KVGameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BF68D0B61CC98DEE0082B447 /* KVGameViewController.m */; };
+		BF68D0BC1CC98EEB0082B447 /* KVPlayerNode.m in Sources */ = {isa = PBXBuildFile; fileRef = BF68D0BB1CC98EEB0082B447 /* KVPlayerNode.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		BF3787371CC98FF8006C1122 /* KVGameScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KVGameScene.h; sourceTree = "<group>"; };
+		BF3787381CC98FF8006C1122 /* KVGameScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KVGameScene.m; sourceTree = "<group>"; };
+		BF37873A1CC99006006C1122 /* KVLoseScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KVLoseScene.h; sourceTree = "<group>"; };
+		BF37873B1CC99006006C1122 /* KVLoseScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KVLoseScene.m; sourceTree = "<group>"; };
+		BF3787401CC991CB006C1122 /* KVGameStats.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KVGameStats.h; sourceTree = "<group>"; };
+		BF3787411CC991CB006C1122 /* KVGameStats.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KVGameStats.m; sourceTree = "<group>"; };
+		BF68D08D1CC98C480082B447 /* KVFood.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KVFood.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BF68D0911CC98C480082B447 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		BF68D0931CC98C480082B447 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		BF68D0941CC98C480082B447 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		BF68D09F1CC98C490082B447 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		BF68D0A11CC98C490082B447 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BF68D0A41CC98C490082B447 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		BF68D0A61CC98C490082B447 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BF68D0AC1CC98DAD0082B447 /* KVMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KVMenuViewController.h; sourceTree = "<group>"; };
+		BF68D0AD1CC98DAD0082B447 /* KVMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KVMenuViewController.m; sourceTree = "<group>"; };
+		BF68D0AF1CC98DC10082B447 /* KVCreditsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KVCreditsViewController.h; sourceTree = "<group>"; };
+		BF68D0B01CC98DC10082B447 /* KVCreditsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KVCreditsViewController.m; sourceTree = "<group>"; };
+		BF68D0B21CC98DD10082B447 /* KVLeaderBoardViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KVLeaderBoardViewController.h; sourceTree = "<group>"; };
+		BF68D0B31CC98DD10082B447 /* KVLeaderBoardViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KVLeaderBoardViewController.m; sourceTree = "<group>"; };
+		BF68D0B51CC98DEE0082B447 /* KVGameViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KVGameViewController.h; sourceTree = "<group>"; };
+		BF68D0B61CC98DEE0082B447 /* KVGameViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KVGameViewController.m; sourceTree = "<group>"; };
+		BF68D0BA1CC98EEB0082B447 /* KVPlayerNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KVPlayerNode.h; sourceTree = "<group>"; };
+		BF68D0BB1CC98EEB0082B447 /* KVPlayerNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KVPlayerNode.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BF68D08A1CC98C480082B447 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BF37873D1CC99043006C1122 /* GameScenes */ = {
+			isa = PBXGroup;
+			children = (
+				BF3787371CC98FF8006C1122 /* KVGameScene.h */,
+				BF3787381CC98FF8006C1122 /* KVGameScene.m */,
+				BF37873A1CC99006006C1122 /* KVLoseScene.h */,
+				BF37873B1CC99006006C1122 /* KVLoseScene.m */,
+			);
+			name = GameScenes;
+			sourceTree = "<group>";
+		};
+		BF37873E1CC9904D006C1122 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				BF68D0AC1CC98DAD0082B447 /* KVMenuViewController.h */,
+				BF68D0AD1CC98DAD0082B447 /* KVMenuViewController.m */,
+				BF68D0AF1CC98DC10082B447 /* KVCreditsViewController.h */,
+				BF68D0B01CC98DC10082B447 /* KVCreditsViewController.m */,
+				BF68D0B21CC98DD10082B447 /* KVLeaderBoardViewController.h */,
+				BF68D0B31CC98DD10082B447 /* KVLeaderBoardViewController.m */,
+				BF68D0B51CC98DEE0082B447 /* KVGameViewController.h */,
+				BF68D0B61CC98DEE0082B447 /* KVGameViewController.m */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		BF37873F1CC9905A006C1122 /* SubClasses */ = {
+			isa = PBXGroup;
+			children = (
+				BF68D0BA1CC98EEB0082B447 /* KVPlayerNode.h */,
+				BF68D0BB1CC98EEB0082B447 /* KVPlayerNode.m */,
+			);
+			name = SubClasses;
+			sourceTree = "<group>";
+		};
+		BF68D0841CC98C480082B447 = {
+			isa = PBXGroup;
+			children = (
+				BF68D08F1CC98C480082B447 /* KVFood */,
+				BF68D08E1CC98C480082B447 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BF68D08E1CC98C480082B447 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BF68D08D1CC98C480082B447 /* KVFood.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BF68D08F1CC98C480082B447 /* KVFood */ = {
+			isa = PBXGroup;
+			children = (
+				BF68D0931CC98C480082B447 /* AppDelegate.h */,
+				BF68D0941CC98C480082B447 /* AppDelegate.m */,
+				BF3787401CC991CB006C1122 /* KVGameStats.h */,
+				BF3787411CC991CB006C1122 /* KVGameStats.m */,
+				BF68D09E1CC98C490082B447 /* Main.storyboard */,
+				BF37873F1CC9905A006C1122 /* SubClasses */,
+				BF37873E1CC9904D006C1122 /* ViewControllers */,
+				BF37873D1CC99043006C1122 /* GameScenes */,
+				BF68D0A11CC98C490082B447 /* Assets.xcassets */,
+				BF68D0A31CC98C490082B447 /* LaunchScreen.storyboard */,
+				BF68D0A61CC98C490082B447 /* Info.plist */,
+				BF68D0901CC98C480082B447 /* Supporting Files */,
+			);
+			path = KVFood;
+			sourceTree = "<group>";
+		};
+		BF68D0901CC98C480082B447 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				BF68D0911CC98C480082B447 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BF68D08C1CC98C480082B447 /* KVFood */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BF68D0A91CC98C490082B447 /* Build configuration list for PBXNativeTarget "KVFood" */;
+			buildPhases = (
+				BF68D0891CC98C480082B447 /* Sources */,
+				BF68D08A1CC98C480082B447 /* Frameworks */,
+				BF68D08B1CC98C480082B447 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KVFood;
+			productName = KVFood;
+			productReference = BF68D08D1CC98C480082B447 /* KVFood.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BF68D0851CC98C480082B447 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "Kyle&Vince";
+				TargetAttributes = {
+					BF68D08C1CC98C480082B447 = {
+						CreatedOnToolsVersion = 7.3;
+					};
+				};
+			};
+			buildConfigurationList = BF68D0881CC98C480082B447 /* Build configuration list for PBXProject "KVFood" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BF68D0841CC98C480082B447;
+			productRefGroup = BF68D08E1CC98C480082B447 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BF68D08C1CC98C480082B447 /* KVFood */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BF68D08B1CC98C480082B447 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BF68D0A51CC98C490082B447 /* LaunchScreen.storyboard in Resources */,
+				BF68D0A21CC98C490082B447 /* Assets.xcassets in Resources */,
+				BF68D0A01CC98C490082B447 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BF68D0891CC98C480082B447 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BF68D0AE1CC98DAD0082B447 /* KVMenuViewController.m in Sources */,
+				BF68D0951CC98C480082B447 /* AppDelegate.m in Sources */,
+				BF3787421CC991CB006C1122 /* KVGameStats.m in Sources */,
+				BF68D0B71CC98DEE0082B447 /* KVGameViewController.m in Sources */,
+				BF68D0BC1CC98EEB0082B447 /* KVPlayerNode.m in Sources */,
+				BF68D0B41CC98DD10082B447 /* KVLeaderBoardViewController.m in Sources */,
+				BF3787391CC98FF8006C1122 /* KVGameScene.m in Sources */,
+				BF37873C1CC99006006C1122 /* KVLoseScene.m in Sources */,
+				BF68D0B11CC98DC10082B447 /* KVCreditsViewController.m in Sources */,
+				BF68D0921CC98C480082B447 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		BF68D09E1CC98C490082B447 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BF68D09F1CC98C490082B447 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		BF68D0A31CC98C490082B447 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BF68D0A41CC98C490082B447 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BF68D0A71CC98C490082B447 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BF68D0A81CC98C490082B447 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BF68D0AA1CC98C490082B447 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = KVFood/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Lupo.presentationTest.KVFood;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		BF68D0AB1CC98C490082B447 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = KVFood/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Lupo.presentationTest.KVFood;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BF68D0881CC98C480082B447 /* Build configuration list for PBXProject "KVFood" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BF68D0A71CC98C490082B447 /* Debug */,
+				BF68D0A81CC98C490082B447 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BF68D0A91CC98C490082B447 /* Build configuration list for PBXNativeTarget "KVFood" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BF68D0AA1CC98C490082B447 /* Debug */,
+				BF68D0AB1CC98C490082B447 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BF68D0851CC98C480082B447 /* Project object */;
+}
