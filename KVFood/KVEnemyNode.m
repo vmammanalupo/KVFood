@@ -66,9 +66,16 @@
     SKAction *repeatColorizeAndReverse = [SKAction repeatAction:colorizeAndReverse count:2];
     if (self.healthPoints > 0) {
         //Play damage sound effect
-        [self runAction:colorizeAndReverse];
-        SKAction *damagedKnockBack = [SKAction moveBy:[self vectorForDamagedKnockBackWithMagnitude:5] duration:0.2];
-        [self runAction:damagedKnockBack];
+        [self removeAllActions];
+        SKAction *damagedKnockBack = [SKAction moveBy:[self vectorForDamagedKnockBackWithMagnitude:0.5] duration:0.2];
+        
+        SKAction *colorizedDamageKnockBack = [SKAction group:@[colorizeAndReverse, damagedKnockBack]];
+        
+        CGPoint sceneCenter =  CGPointMake(self.scene.frame.size.width/2, self.scene.frame.size.height/2);
+        
+        SKAction *moveToCenter = [SKAction moveTo:sceneCenter duration:1.25];
+        
+        [self runAction:[SKAction sequence:@[colorizedDamageKnockBack, moveToCenter]]];
     }
     //Dead
     else {
