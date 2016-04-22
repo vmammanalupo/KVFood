@@ -10,4 +10,8 @@
 
 @interface KVLoseScene : SKScene
 
+- (id)initWithSize:(CGSize)size
+ withEnemiesKilled:(int)killCount
+         withScore:(int)finalScore;
+
 @end
