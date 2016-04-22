@@ -7,6 +7,7 @@
 //
 
 #import "KVGameScene.h"
+#import "KVLoseScene.h"
 #import "KVPlayerNode.h"
 #import "KVEnemyNode.h"
 #import "KVConstants.h"
@@ -180,6 +181,18 @@
     //Update Scores
     //Add removal logic
     [enemy removeFromParent];
+    self.player.healthPoints = self.player.healthPoints - 1;
+    
+    if (self.player.healthPoints == 0)
+    {
+        SKAction * loseAction = [SKAction runBlock:^{
+            SKTransition *reveal = [SKTransition doorsCloseHorizontalWithDuration:0.5];
+            SKScene *gameOverScene = [[KVLoseScene alloc] initWithSize:self.size withEnemiesKilled:1 withScore:1];;
+            [self.view presentScene:gameOverScene transition:reveal];
+        }];
+        
+        [self runAction:loseAction];
+    }
 }
 
 @end
