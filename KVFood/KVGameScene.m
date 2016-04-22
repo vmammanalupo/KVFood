@@ -143,6 +143,30 @@
     }];
 }
 
+- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
+    for (UITouch *touch in touches) {
+        CGPoint touchLocation = [touch locationInNode:self];
+        SKNode *node = [self nodeAtPoint:touchLocation];
+        
+        if ([node.name isEqualToString:@"Pause"]) {
+            if (!self.gameIsPaused) {
+                self.paused = YES;
+                self.gameIsPaused = YES;
+            }
+            else {
+                self.paused = NO;
+                self.gameIsPaused = NO;
+            }
+            
+            return;
+        }
+        else if ([node.name isEqualToString:@"Enemy"]) {
+            KVEnemyNode *enemy = (KVEnemyNode *)node;
+            [enemy performEnemyDamagedByPlayerAction];
+        }
+    }
+}
+
 #pragma mark - Collision Detection
 
 - (void)didBeginContact:(SKPhysicsContact *)contact {
@@ -183,8 +207,7 @@
     [enemy removeFromParent];
     self.player.healthPoints = self.player.healthPoints - 1;
     
-    if (self.player.healthPoints == 0)
-    {
+    if (self.player.healthPoints == 0) {
         SKAction * loseAction = [SKAction runBlock:^{
             SKTransition *reveal = [SKTransition doorsCloseHorizontalWithDuration:0.5];
             SKScene *gameOverScene = [[KVLoseScene alloc] initWithSize:self.size withEnemiesKilled:1 withScore:1];;

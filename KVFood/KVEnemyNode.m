@@ -8,6 +8,7 @@
 
 #import "KVEnemyNode.h"
 #import "KVConstants.h"
+#import "SKLabelNode+KVLabelAdditions.h"
 
 @implementation KVEnemyNode
 
@@ -17,38 +18,71 @@
 }
 
 + (KVEnemyNode *)createEnemyAtPosition:(CGPoint)position ofType:(EnemyType)type {
-    KVEnemyNode *node = [KVEnemyNode node];
-    [node setPosition:position];
-    [node setName:@"Enemy"];
-    [node setEnemyType:type];
-    
-    SKSpriteNode *sprite;
+    KVEnemyNode *node = [KVEnemyNode spriteNodeWithImageNamed:@"Spaceship"];
     if (type == ENEMY_HAND) {
+        node.healthPoints = 1;
+        node.pointValue = 5;
         //USE HAND IMAGE
-        sprite = [SKSpriteNode spriteNodeWithImageNamed:@"Spaceship"];
-        sprite.color = [UIColor colorWithRed:1.0 green:0 blue:0 alpha:1.0];
-        sprite.colorBlendFactor = 1.0f;
+        node.color = [UIColor colorWithRed:1.0 green:0 blue:0 alpha:1.0];
+        node.colorBlendFactor = 1.0f;
     }
     else if (type == ENEMY_FORK) {
         //USE FORK IMAGE
-        sprite = [SKSpriteNode spriteNodeWithImageNamed:@"Spaceship"];
-        sprite.color = [UIColor colorWithRed:0 green:1.0 blue:0 alpha:1.0];
-        sprite.colorBlendFactor = 1.0f;
+        node.healthPoints = 2;
+        node.pointValue = 10;
+        node.color = [UIColor colorWithRed:0 green:1.0 blue:0 alpha:1.0];
+        node.colorBlendFactor = 1.0f;
     }
     else {
         //USE KNIFE IMAGE
-        sprite = [SKSpriteNode spriteNodeWithImageNamed:@"Spaceship"];
-        sprite.color = [UIColor colorWithRed:0 green:0 blue:1.0 alpha:1.0];
-        sprite.colorBlendFactor = 1.0f;
+        node.healthPoints = 3;
+        node.pointValue = 15;
+        node.color = [UIColor colorWithRed:0 green:0 blue:1.0 alpha:1.0];
+        node.colorBlendFactor = 1.0f;
     }
-    [node addChild:sprite];
     
-    node.physicsBody = [SKPhysicsBody bodyWithRectangleOfSize:sprite.size];
+    [node setPosition:position];
+    [node setName:@"Enemy"];
+    node.xScale = 0.3;
+    node.yScale = 0.3;
+    
+    [node setEnemyType:type];
+    node.physicsBody = [SKPhysicsBody bodyWithRectangleOfSize:node.size];
     node.physicsBody.dynamic = YES;
     node.physicsBody.categoryBitMask = KVCollisionCategoryEnemy;
     node.physicsBody.collisionBitMask = 0;
     
     return node;
+}
+
+- (void)performEnemyDamagedByPlayerAction {
+    self.healthPoints --;
+    //Play damage sound effect
+    //        [self runAction:[SKAction playSoundFileNamed:kHeroShipDamagedSound waitForCompletion:NO]];
+    SKAction *colorize = [SKAction colorizeWithColor:[UIColor redColor] colorBlendFactor:1 duration:0.5];
+    SKAction *reverse = [colorize reversedAction];
+    SKAction *fadeOut = [SKAction fadeOutWithDuration:1];
+    SKAction *colorizeAndReverse = [SKAction sequence:@[colorize, reverse]];
+    SKAction *repeatColorizeAndReverse = [SKAction repeatAction:colorizeAndReverse count:2];
+    
+    if (self.healthPoints > 0) {
+        //Play damage sound effect
+        [self runAction:colorizeAndReverse];
+    }
+    //Dead
+    else {
+        //Play die sound effect
+        //Stop enemy in its tracks
+        [self removeAllActions];
+        [SKLabelNode addPointsAcquiredLabelToScene:self.scene
+                                        atPosition:self.position
+                                        withPoints:[NSString stringWithFormat:@"%d", self.pointValue]];
+        
+        typeof(self) __weak weakSelf = self;
+        [self runAction:[SKAction group:@[repeatColorizeAndReverse, fadeOut]] completion:^{
+            [weakSelf removeFromParent];
+        }];
+    }
 }
 
 @end

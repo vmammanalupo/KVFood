@@ -13,7 +13,7 @@
 + (SKLabelNode *)pointsAcquiredLabel {
     SKLabelNode *pointsAcquiredLabel = [[SKLabelNode alloc] initWithFontNamed:@"Chalkduster"];
     pointsAcquiredLabel.fontColor = [SKColor yellowColor];
-    pointsAcquiredLabel.fontSize = 10;
+    pointsAcquiredLabel.fontSize = 40;
     pointsAcquiredLabel.alpha = 0;
     pointsAcquiredLabel.zPosition = 4;
     pointsAcquiredLabel.hidden = YES;
