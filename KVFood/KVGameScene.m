@@ -109,7 +109,7 @@
     self.lastUpdateTimeInterval = currentTime;
     
     if (timeSinceLast > 1) {
-        timeSinceLast = 1.0 / 60.0;
+        timeSinceLast = 1.0 / 30.0;
         self.lastUpdateTimeInterval = currentTime;
     }
     

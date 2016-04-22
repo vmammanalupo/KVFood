@@ -45,6 +45,7 @@
     [node setName:@"Enemy"];
     node.xScale = 0.3;
     node.yScale = 0.3;
+    node.spawnPoint = position;
     
     [node setEnemyType:type];
     node.physicsBody = [SKPhysicsBody bodyWithRectangleOfSize:node.size];
@@ -61,13 +62,13 @@
     //        [self runAction:[SKAction playSoundFileNamed:kHeroShipDamagedSound waitForCompletion:NO]];
     SKAction *colorize = [SKAction colorizeWithColor:[UIColor redColor] colorBlendFactor:1 duration:0.5];
     SKAction *reverse = [colorize reversedAction];
-    SKAction *fadeOut = [SKAction fadeOutWithDuration:1];
     SKAction *colorizeAndReverse = [SKAction sequence:@[colorize, reverse]];
     SKAction *repeatColorizeAndReverse = [SKAction repeatAction:colorizeAndReverse count:2];
-    
     if (self.healthPoints > 0) {
         //Play damage sound effect
         [self runAction:colorizeAndReverse];
+        SKAction *damagedKnockBack = [SKAction moveBy:[self vectorForDamagedKnockBackWithMagnitude:5] duration:0.2];
+        [self runAction:damagedKnockBack];
     }
     //Dead
     else {
@@ -77,12 +78,17 @@
         [SKLabelNode addPointsAcquiredLabelToScene:self.scene
                                         atPosition:self.position
                                         withPoints:[NSString stringWithFormat:@"%d", self.pointValue]];
-        
+        SKAction *fadeOut = [SKAction fadeOutWithDuration:1];
         typeof(self) __weak weakSelf = self;
         [self runAction:[SKAction group:@[repeatColorizeAndReverse, fadeOut]] completion:^{
             [weakSelf removeFromParent];
         }];
     }
+}
+
+- (CGVector)vectorForDamagedKnockBackWithMagnitude:(CGFloat)magnitude {
+    return CGVectorMake(magnitude * (self.spawnPoint.x - self.position.x),
+                        magnitude * (self.spawnPoint.y - self.position.y));
 }
 
 @end
