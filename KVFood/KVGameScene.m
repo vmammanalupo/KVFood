@@ -67,6 +67,39 @@
     return actualDuration;
 }
 
+- (CGFloat)rotationForSpawnPoint:(CGPoint)point {
+    CGPoint origin = CGPointMake(self.frame.size.width / 2, self.frame.size.height / 2);
+    CGFloat distance = sqrt(point.x * point.x + point.y * point.y);
+    CGFloat xVelocity = point.x - origin.x;
+    CGFloat yVelocity = point.y - origin.y;
+    CGFloat radians = fabs(xVelocity / distance);
+    
+    NSLog(@"%f %f", xVelocity, yVelocity);
+    CGFloat rotation;
+    // 1
+    if (xVelocity > 0 && yVelocity > 0) {
+        NSLog(@"FIRST");
+        rotation = M_PI / 2 + radians;
+    }
+    // 2
+    else if (xVelocity < 0 && yVelocity > 0) {
+        NSLog(@"SECOND");
+        rotation = - M_PI / 2 - radians;
+    }
+    // 3
+    else if (xVelocity < 0 && yVelocity < 0) {
+        NSLog(@"THIRD");
+        rotation = radians - M_PI / 2;
+    }
+    // 4
+    else {
+        NSLog(@"FOURTH");
+        rotation = M_PI / 2 - radians;
+    }
+    
+    return rotation;
+}
+
 #pragma mark - Update methods
 
 - (void)update:(CFTimeInterval)currentTime {
@@ -94,7 +127,9 @@
 }
 
 - (void)addEnemy {
-    KVEnemyNode *enemy = [KVEnemyNode createEnemyAtPosition:[self randomSpawnPoint] ofType:arc4random_uniform(3)];
+    CGPoint spawnPoint = [self randomSpawnPoint];
+    KVEnemyNode *enemy = [KVEnemyNode createEnemyAtPosition:spawnPoint ofType:arc4random_uniform(3)];
+    enemy.zRotation = [self rotationForSpawnPoint:spawnPoint]; // TODO: Refactor this method
     [self addChild:enemy];
     
     int randomDuration = [self randomizedDurationFromTimeRangeOfMinimum:2 andMaximum:4];
