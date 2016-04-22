@@ -10,6 +10,9 @@
 		BF3787391CC98FF8006C1122 /* KVGameScene.m in Sources */ = {isa = PBXBuildFile; fileRef = BF3787381CC98FF8006C1122 /* KVGameScene.m */; };
 		BF37873C1CC99006006C1122 /* KVLoseScene.m in Sources */ = {isa = PBXBuildFile; fileRef = BF37873B1CC99006006C1122 /* KVLoseScene.m */; };
 		BF3787421CC991CB006C1122 /* KVGameStats.m in Sources */ = {isa = PBXBuildFile; fileRef = BF3787411CC991CB006C1122 /* KVGameStats.m */; };
+		BF3787451CC99DEE006C1122 /* KVConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = BF3787441CC99DEE006C1122 /* KVConstants.m */; };
+		BF3787481CC99F44006C1122 /* KVEnemyNode.m in Sources */ = {isa = PBXBuildFile; fileRef = BF3787471CC99F44006C1122 /* KVEnemyNode.m */; };
+		BF37874A1CC9A519006C1122 /* KVGameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = BF3787491CC9A519006C1122 /* KVGameScene.sks */; };
 		BF68D0921CC98C480082B447 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BF68D0911CC98C480082B447 /* main.m */; };
 		BF68D0951CC98C480082B447 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BF68D0941CC98C480082B447 /* AppDelegate.m */; };
 		BF68D0A01CC98C490082B447 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF68D09E1CC98C490082B447 /* Main.storyboard */; };
@@ -29,6 +32,11 @@
 		BF37873B1CC99006006C1122 /* KVLoseScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KVLoseScene.m; sourceTree = "<group>"; };
 		BF3787401CC991CB006C1122 /* KVGameStats.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KVGameStats.h; sourceTree = "<group>"; };
 		BF3787411CC991CB006C1122 /* KVGameStats.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KVGameStats.m; sourceTree = "<group>"; };
+		BF3787431CC99DEE006C1122 /* KVConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KVConstants.h; sourceTree = "<group>"; };
+		BF3787441CC99DEE006C1122 /* KVConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KVConstants.m; sourceTree = "<group>"; };
+		BF3787461CC99F44006C1122 /* KVEnemyNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KVEnemyNode.h; sourceTree = "<group>"; };
+		BF3787471CC99F44006C1122 /* KVEnemyNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KVEnemyNode.m; sourceTree = "<group>"; };
+		BF3787491CC9A519006C1122 /* KVGameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = KVGameScene.sks; sourceTree = "<group>"; };
 		BF68D08D1CC98C480082B447 /* KVFood.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KVFood.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF68D0911CC98C480082B447 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		BF68D0931CC98C480082B447 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -65,6 +73,7 @@
 			children = (
 				BF3787371CC98FF8006C1122 /* KVGameScene.h */,
 				BF3787381CC98FF8006C1122 /* KVGameScene.m */,
+				BF3787491CC9A519006C1122 /* KVGameScene.sks */,
 				BF37873A1CC99006006C1122 /* KVLoseScene.h */,
 				BF37873B1CC99006006C1122 /* KVLoseScene.m */,
 			);
@@ -91,6 +100,8 @@
 			children = (
 				BF68D0BA1CC98EEB0082B447 /* KVPlayerNode.h */,
 				BF68D0BB1CC98EEB0082B447 /* KVPlayerNode.m */,
+				BF3787461CC99F44006C1122 /* KVEnemyNode.h */,
+				BF3787471CC99F44006C1122 /* KVEnemyNode.m */,
 			);
 			name = SubClasses;
 			sourceTree = "<group>";
@@ -118,6 +129,8 @@
 				BF68D0941CC98C480082B447 /* AppDelegate.m */,
 				BF3787401CC991CB006C1122 /* KVGameStats.h */,
 				BF3787411CC991CB006C1122 /* KVGameStats.m */,
+				BF3787431CC99DEE006C1122 /* KVConstants.h */,
+				BF3787441CC99DEE006C1122 /* KVConstants.m */,
 				BF68D09E1CC98C490082B447 /* Main.storyboard */,
 				BF37873F1CC9905A006C1122 /* SubClasses */,
 				BF37873E1CC9904D006C1122 /* ViewControllers */,
@@ -198,6 +211,7 @@
 				BF68D0A51CC98C490082B447 /* LaunchScreen.storyboard in Resources */,
 				BF68D0A21CC98C490082B447 /* Assets.xcassets in Resources */,
 				BF68D0A01CC98C490082B447 /* Main.storyboard in Resources */,
+				BF37874A1CC9A519006C1122 /* KVGameScene.sks in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -209,6 +223,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BF68D0AE1CC98DAD0082B447 /* KVMenuViewController.m in Sources */,
+				BF3787481CC99F44006C1122 /* KVEnemyNode.m in Sources */,
 				BF68D0951CC98C480082B447 /* AppDelegate.m in Sources */,
 				BF3787421CC991CB006C1122 /* KVGameStats.m in Sources */,
 				BF68D0B71CC98DEE0082B447 /* KVGameViewController.m in Sources */,
@@ -216,6 +231,7 @@
 				BF68D0B41CC98DD10082B447 /* KVLeaderBoardViewController.m in Sources */,
 				BF3787391CC98FF8006C1122 /* KVGameScene.m in Sources */,
 				BF37873C1CC99006006C1122 /* KVLoseScene.m in Sources */,
+				BF3787451CC99DEE006C1122 /* KVConstants.m in Sources */,
 				BF68D0B11CC98DC10082B447 /* KVCreditsViewController.m in Sources */,
 				BF68D0921CC98C480082B447 /* main.m in Sources */,
 			);
