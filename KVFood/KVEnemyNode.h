@@ -25,6 +25,9 @@ typedef NS_ENUM(int, EnemyType) {
 //The type of enemy generated
 @property (nonatomic, assign) EnemyType enemyType;
 
+//Where the enemy was spawned
+@property (nonatomic, assign) CGPoint spawnPoint;
+
 /**
  *  Convenience Init - Creates an enemy at a specified position of a specified type
  *
