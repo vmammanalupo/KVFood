@@ -13,6 +13,7 @@
 		BF3787451CC99DEE006C1122 /* KVConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = BF3787441CC99DEE006C1122 /* KVConstants.m */; };
 		BF3787481CC99F44006C1122 /* KVEnemyNode.m in Sources */ = {isa = PBXBuildFile; fileRef = BF3787471CC99F44006C1122 /* KVEnemyNode.m */; };
 		BF37874A1CC9A519006C1122 /* KVGameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = BF3787491CC9A519006C1122 /* KVGameScene.sks */; };
+		BF37874D1CC9CD99006C1122 /* SKLabelNode+KVLabelAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = BF37874C1CC9CD99006C1122 /* SKLabelNode+KVLabelAdditions.m */; };
 		BF68D0921CC98C480082B447 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BF68D0911CC98C480082B447 /* main.m */; };
 		BF68D0951CC98C480082B447 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BF68D0941CC98C480082B447 /* AppDelegate.m */; };
 		BF68D0A01CC98C490082B447 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF68D09E1CC98C490082B447 /* Main.storyboard */; };
@@ -37,6 +38,8 @@
 		BF3787461CC99F44006C1122 /* KVEnemyNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KVEnemyNode.h; sourceTree = "<group>"; };
 		BF3787471CC99F44006C1122 /* KVEnemyNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KVEnemyNode.m; sourceTree = "<group>"; };
 		BF3787491CC9A519006C1122 /* KVGameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = KVGameScene.sks; sourceTree = "<group>"; };
+		BF37874B1CC9CD99006C1122 /* SKLabelNode+KVLabelAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SKLabelNode+KVLabelAdditions.h"; sourceTree = "<group>"; };
+		BF37874C1CC9CD99006C1122 /* SKLabelNode+KVLabelAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "SKLabelNode+KVLabelAdditions.m"; sourceTree = "<group>"; };
 		BF68D08D1CC98C480082B447 /* KVFood.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KVFood.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF68D0911CC98C480082B447 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		BF68D0931CC98C480082B447 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -106,6 +109,15 @@
 			name = SubClasses;
 			sourceTree = "<group>";
 		};
+		BF37874E1CC9CDB1006C1122 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				BF37874B1CC9CD99006C1122 /* SKLabelNode+KVLabelAdditions.h */,
+				BF37874C1CC9CD99006C1122 /* SKLabelNode+KVLabelAdditions.m */,
+			);
+			name = Categories;
+			sourceTree = "<group>";
+		};
 		BF68D0841CC98C480082B447 = {
 			isa = PBXGroup;
 			children = (
@@ -132,6 +144,7 @@
 				BF3787431CC99DEE006C1122 /* KVConstants.h */,
 				BF3787441CC99DEE006C1122 /* KVConstants.m */,
 				BF68D09E1CC98C490082B447 /* Main.storyboard */,
+				BF37874E1CC9CDB1006C1122 /* Categories */,
 				BF37873F1CC9905A006C1122 /* SubClasses */,
 				BF37873E1CC9904D006C1122 /* ViewControllers */,
 				BF37873D1CC99043006C1122 /* GameScenes */,
@@ -229,6 +242,7 @@
 				BF68D0B71CC98DEE0082B447 /* KVGameViewController.m in Sources */,
 				BF68D0BC1CC98EEB0082B447 /* KVPlayerNode.m in Sources */,
 				BF68D0B41CC98DD10082B447 /* KVLeaderBoardViewController.m in Sources */,
+				BF37874D1CC9CD99006C1122 /* SKLabelNode+KVLabelAdditions.m in Sources */,
 				BF3787391CC98FF8006C1122 /* KVGameScene.m in Sources */,
 				BF37873C1CC99006006C1122 /* KVLoseScene.m in Sources */,
 				BF3787451CC99DEE006C1122 /* KVConstants.m in Sources */,

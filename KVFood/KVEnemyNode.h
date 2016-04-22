@@ -16,6 +16,12 @@ typedef NS_ENUM(int, EnemyType) {
 
 @interface KVEnemyNode : SKSpriteNode
 
+//The number of points the enemy is worth when killed
+@property (nonatomic) int pointValue;
+
+//The number of hits it takes an enemy to be killed
+@property (nonatomic) int healthPoints;
+
 //The type of enemy generated
 @property (nonatomic, assign) EnemyType enemyType;
 
@@ -28,5 +34,10 @@ typedef NS_ENUM(int, EnemyType) {
  *  @return KVEnemyNode     Returns a KVEnemyNode at the position of the specified type
  */
 + (KVEnemyNode *)createEnemyAtPosition:(CGPoint)position ofType:(EnemyType)type;
+
+/**
+ *  Convenience Method - called when an enemy is damaged. If the enemy dies it removes from scene
+ */
+- (void)performEnemyDamagedByPlayerAction;
 
 @end
