@@ -21,18 +21,42 @@
     KVEnemyNode *node;
     // TODO: Edit assets to all point right. That way we can standardize rotation.
     if (type == ENEMY_HAND) {
+#if kArrowNodes
+        node = [KVEnemyNode spriteNodeWithImageNamed:@"arrow"];
+        node.color = [UIColor redColor];
+        node.xScale = 0.3;
+        node.yScale = 0.3;
+        node.colorBlendFactor = 1.0;
+#else
         node = [KVEnemyNode spriteNodeWithImageNamed:@"arm"];
+#endif
         node.healthPoints = 1;
         node.pointValue = 5;
     }
     else if (type == ENEMY_FORK) {
+#if kArrowNodes
+        node = [KVEnemyNode spriteNodeWithImageNamed:@"arrow"];
+        node.color = [UIColor blueColor];
+        node.xScale = 0.3;
+        node.yScale = 0.3;
+        node.colorBlendFactor = 1.0;
+#else
         node = [KVEnemyNode spriteNodeWithImageNamed:@"fork"];
+#endif
         node.healthPoints = 2;
         node.pointValue = 10;
     }
     else {
         //USE KNIFE IMAGE
+#if kArrowNodes
+        node = [KVEnemyNode spriteNodeWithImageNamed:@"arrow"];
+        node.color = [UIColor yellowColor];
+        node.xScale = 0.3;
+        node.yScale = 0.3;
+        node.colorBlendFactor = 1.0;
+#else
         node = [KVEnemyNode spriteNodeWithImageNamed:@"knife"];
+#endif
         node.healthPoints = 3;
         node.pointValue = 15;
     }
