@@ -21,6 +21,8 @@
 		BF6ACA391CD185E4009E205A /* KVCreditsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BF6ACA341CD185E4009E205A /* KVCreditsViewController.m */; };
 		BF6ACA3A1CD185E4009E205A /* KVGameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BF6ACA361CD185E4009E205A /* KVGameViewController.m */; };
 		BF6ACA3B1CD185E4009E205A /* KVMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BF6ACA381CD185E4009E205A /* KVMenuViewController.m */; };
+		BF6ACA401CD18689009E205A /* KVEnemyNode.m in Sources */ = {isa = PBXBuildFile; fileRef = BF6ACA3D1CD18689009E205A /* KVEnemyNode.m */; };
+		BF6ACA411CD18689009E205A /* KVPlayerNode.m in Sources */ = {isa = PBXBuildFile; fileRef = BF6ACA3F1CD18689009E205A /* KVPlayerNode.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -54,6 +56,10 @@
 		BF6ACA361CD185E4009E205A /* KVGameViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KVGameViewController.m; sourceTree = "<group>"; };
 		BF6ACA371CD185E4009E205A /* KVMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KVMenuViewController.h; sourceTree = "<group>"; };
 		BF6ACA381CD185E4009E205A /* KVMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KVMenuViewController.m; sourceTree = "<group>"; };
+		BF6ACA3C1CD18689009E205A /* KVEnemyNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KVEnemyNode.h; sourceTree = "<group>"; };
+		BF6ACA3D1CD18689009E205A /* KVEnemyNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KVEnemyNode.m; sourceTree = "<group>"; };
+		BF6ACA3E1CD18689009E205A /* KVPlayerNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KVPlayerNode.h; sourceTree = "<group>"; };
+		BF6ACA3F1CD18689009E205A /* KVPlayerNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KVPlayerNode.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +102,10 @@
 		BF37873F1CC9905A006C1122 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				BF6ACA3C1CD18689009E205A /* KVEnemyNode.h */,
+				BF6ACA3D1CD18689009E205A /* KVEnemyNode.m */,
+				BF6ACA3E1CD18689009E205A /* KVPlayerNode.h */,
+				BF6ACA3F1CD18689009E205A /* KVPlayerNode.m */,
 				512123CB1CD17E8300E9046C /* KVScoreNode.h */,
 				512123CC1CD17E8300E9046C /* KVScoreNode.m */,
 			);
@@ -245,6 +255,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				BF6ACA3B1CD185E4009E205A /* KVMenuViewController.m in Sources */,
+				BF6ACA411CD18689009E205A /* KVPlayerNode.m in Sources */,
+				BF6ACA401CD18689009E205A /* KVEnemyNode.m in Sources */,
 				512123D01CD17E8300E9046C /* KVScoreNode.m in Sources */,
 				5A287F191CD11EC5004EC7D0 /* (null) in Sources */,
 				BF6ACA391CD185E4009E205A /* KVCreditsViewController.m in Sources */,
