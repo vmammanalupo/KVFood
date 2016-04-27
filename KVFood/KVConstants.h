@@ -8,6 +8,8 @@
 
 #import <Foundation/Foundation.h>
 
+#define kArrowNodes 1
+
 @interface KVConstants : NSObject
 
 typedef NS_OPTIONS(uint32_t, KVCollisionCategory) {
