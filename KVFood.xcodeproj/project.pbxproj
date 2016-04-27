@@ -7,18 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		5A287F071CD11E65004EC7D0 /* SKLabelNode+KVLabelAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A287F061CD11E65004EC7D0 /* SKLabelNode+KVLabelAdditions.m */; };
-		5A287F101CD11EA3004EC7D0 /* KVCreditsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A287F091CD11EA3004EC7D0 /* KVCreditsViewController.m */; };
-		5A287F111CD11EA3004EC7D0 /* KVGameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A287F0B1CD11EA3004EC7D0 /* KVGameViewController.m */; };
-		5A287F121CD11EA3004EC7D0 /* KVLeaderBoardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A287F0D1CD11EA3004EC7D0 /* KVLeaderBoardViewController.m */; };
-		5A287F131CD11EA3004EC7D0 /* KVMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A287F0F1CD11EA3004EC7D0 /* KVMenuViewController.m */; };
-		5A287F191CD11EC5004EC7D0 /* KVGameScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A287F151CD11EC5004EC7D0 /* KVGameScene.m */; };
-		5A287F1A1CD11EC5004EC7D0 /* KVGameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 5A287F161CD11EC5004EC7D0 /* KVGameScene.sks */; };
-		5A287F1B1CD11EC5004EC7D0 /* KVLoseScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A287F181CD11EC5004EC7D0 /* KVLoseScene.m */; };
-		5A287F201CD11EE5004EC7D0 /* KVEnemyNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A287F1D1CD11EE5004EC7D0 /* KVEnemyNode.m */; };
-		5A287F211CD11EE5004EC7D0 /* KVPlayerNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A287F1F1CD11EE5004EC7D0 /* KVPlayerNode.m */; };
-		5A287F241CD11F01004EC7D0 /* KVGameStats.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A287F231CD11F01004EC7D0 /* KVGameStats.m */; };
-		5A287F271CD12269004EC7D0 /* UIImage+KVImageAssets.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A287F261CD12269004EC7D0 /* UIImage+KVImageAssets.m */; };
+		512123CD1CD17E8300E9046C /* KVEnemyNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 512123C61CD17E8300E9046C /* KVEnemyNode.m */; };
+		512123CE1CD17E8300E9046C /* KVGameStats.m in Sources */ = {isa = PBXBuildFile; fileRef = 512123C81CD17E8300E9046C /* KVGameStats.m */; };
+		512123CF1CD17E8300E9046C /* KVPlayerNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 512123CA1CD17E8300E9046C /* KVPlayerNode.m */; };
+		512123D01CD17E8300E9046C /* KVScoreNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 512123CC1CD17E8300E9046C /* KVScoreNode.m */; };
+		512123D91CD17E9800E9046C /* KVCreditsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 512123D21CD17E9800E9046C /* KVCreditsViewController.m */; };
+		512123DA1CD17E9800E9046C /* KVGameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 512123D41CD17E9800E9046C /* KVGameViewController.m */; };
+		512123DB1CD17E9800E9046C /* KVLeaderBoardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 512123D61CD17E9800E9046C /* KVLeaderBoardViewController.m */; };
+		512123DC1CD17E9800E9046C /* KVMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 512123D81CD17E9800E9046C /* KVMenuViewController.m */; };
+		512123E21CD17EAC00E9046C /* KVGameScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 512123DE1CD17EAC00E9046C /* KVGameScene.m */; };
+		512123E31CD17EAC00E9046C /* KVGameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 512123DF1CD17EAC00E9046C /* KVGameScene.sks */; };
+		512123E41CD17EAC00E9046C /* KVLoseScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 512123E11CD17EAC00E9046C /* KVLoseScene.m */; };
+		512123E91CD17EC200E9046C /* SKLabelNode+KVLabelAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 512123E61CD17EC200E9046C /* SKLabelNode+KVLabelAdditions.m */; };
+		512123EA1CD17EC200E9046C /* UIImage+KVImageAssets.m in Sources */ = {isa = PBXBuildFile; fileRef = 512123E81CD17EC200E9046C /* UIImage+KVImageAssets.m */; };
 		BF3787451CC99DEE006C1122 /* KVConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = BF3787441CC99DEE006C1122 /* KVConstants.m */; };
 		BF68D0921CC98C480082B447 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BF68D0911CC98C480082B447 /* main.m */; };
 		BF68D0951CC98C480082B447 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BF68D0941CC98C480082B447 /* AppDelegate.m */; };
@@ -28,29 +29,31 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		5A287F051CD11E65004EC7D0 /* SKLabelNode+KVLabelAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "SKLabelNode+KVLabelAdditions.h"; path = "Categories/SKLabelNode+KVLabelAdditions.h"; sourceTree = "<group>"; };
-		5A287F061CD11E65004EC7D0 /* SKLabelNode+KVLabelAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "SKLabelNode+KVLabelAdditions.m"; path = "Categories/SKLabelNode+KVLabelAdditions.m"; sourceTree = "<group>"; };
-		5A287F081CD11EA3004EC7D0 /* KVCreditsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KVCreditsViewController.h; path = ViewControllers/KVCreditsViewController.h; sourceTree = "<group>"; };
-		5A287F091CD11EA3004EC7D0 /* KVCreditsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KVCreditsViewController.m; path = ViewControllers/KVCreditsViewController.m; sourceTree = "<group>"; };
-		5A287F0A1CD11EA3004EC7D0 /* KVGameViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KVGameViewController.h; path = ViewControllers/KVGameViewController.h; sourceTree = "<group>"; };
-		5A287F0B1CD11EA3004EC7D0 /* KVGameViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KVGameViewController.m; path = ViewControllers/KVGameViewController.m; sourceTree = "<group>"; };
-		5A287F0C1CD11EA3004EC7D0 /* KVLeaderBoardViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KVLeaderBoardViewController.h; path = ViewControllers/KVLeaderBoardViewController.h; sourceTree = "<group>"; };
-		5A287F0D1CD11EA3004EC7D0 /* KVLeaderBoardViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KVLeaderBoardViewController.m; path = ViewControllers/KVLeaderBoardViewController.m; sourceTree = "<group>"; };
-		5A287F0E1CD11EA3004EC7D0 /* KVMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KVMenuViewController.h; path = ViewControllers/KVMenuViewController.h; sourceTree = "<group>"; };
-		5A287F0F1CD11EA3004EC7D0 /* KVMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KVMenuViewController.m; path = ViewControllers/KVMenuViewController.m; sourceTree = "<group>"; };
-		5A287F141CD11EC5004EC7D0 /* KVGameScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KVGameScene.h; path = GameScenes/KVGameScene.h; sourceTree = "<group>"; };
-		5A287F151CD11EC5004EC7D0 /* KVGameScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KVGameScene.m; path = GameScenes/KVGameScene.m; sourceTree = "<group>"; };
-		5A287F161CD11EC5004EC7D0 /* KVGameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; name = KVGameScene.sks; path = GameScenes/KVGameScene.sks; sourceTree = "<group>"; };
-		5A287F171CD11EC5004EC7D0 /* KVLoseScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KVLoseScene.h; path = GameScenes/KVLoseScene.h; sourceTree = "<group>"; };
-		5A287F181CD11EC5004EC7D0 /* KVLoseScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KVLoseScene.m; path = GameScenes/KVLoseScene.m; sourceTree = "<group>"; };
-		5A287F1C1CD11EE5004EC7D0 /* KVEnemyNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KVEnemyNode.h; path = Models/KVEnemyNode.h; sourceTree = "<group>"; };
-		5A287F1D1CD11EE5004EC7D0 /* KVEnemyNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KVEnemyNode.m; path = Models/KVEnemyNode.m; sourceTree = "<group>"; };
-		5A287F1E1CD11EE5004EC7D0 /* KVPlayerNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KVPlayerNode.h; path = Models/KVPlayerNode.h; sourceTree = "<group>"; };
-		5A287F1F1CD11EE5004EC7D0 /* KVPlayerNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KVPlayerNode.m; path = Models/KVPlayerNode.m; sourceTree = "<group>"; };
-		5A287F221CD11F01004EC7D0 /* KVGameStats.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KVGameStats.h; path = Models/KVGameStats.h; sourceTree = "<group>"; };
-		5A287F231CD11F01004EC7D0 /* KVGameStats.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KVGameStats.m; path = Models/KVGameStats.m; sourceTree = "<group>"; };
-		5A287F251CD12269004EC7D0 /* UIImage+KVImageAssets.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIImage+KVImageAssets.h"; path = "Categories/UIImage+KVImageAssets.h"; sourceTree = "<group>"; };
-		5A287F261CD12269004EC7D0 /* UIImage+KVImageAssets.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIImage+KVImageAssets.m"; path = "Categories/UIImage+KVImageAssets.m"; sourceTree = "<group>"; };
+		512123C51CD17E8300E9046C /* KVEnemyNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KVEnemyNode.h; sourceTree = "<group>"; };
+		512123C61CD17E8300E9046C /* KVEnemyNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KVEnemyNode.m; sourceTree = "<group>"; };
+		512123C71CD17E8300E9046C /* KVGameStats.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KVGameStats.h; sourceTree = "<group>"; };
+		512123C81CD17E8300E9046C /* KVGameStats.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KVGameStats.m; sourceTree = "<group>"; };
+		512123C91CD17E8300E9046C /* KVPlayerNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KVPlayerNode.h; sourceTree = "<group>"; };
+		512123CA1CD17E8300E9046C /* KVPlayerNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KVPlayerNode.m; sourceTree = "<group>"; };
+		512123CB1CD17E8300E9046C /* KVScoreNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KVScoreNode.h; sourceTree = "<group>"; };
+		512123CC1CD17E8300E9046C /* KVScoreNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KVScoreNode.m; sourceTree = "<group>"; };
+		512123D11CD17E9800E9046C /* KVCreditsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KVCreditsViewController.h; sourceTree = "<group>"; };
+		512123D21CD17E9800E9046C /* KVCreditsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KVCreditsViewController.m; sourceTree = "<group>"; };
+		512123D31CD17E9800E9046C /* KVGameViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KVGameViewController.h; sourceTree = "<group>"; };
+		512123D41CD17E9800E9046C /* KVGameViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KVGameViewController.m; sourceTree = "<group>"; };
+		512123D51CD17E9800E9046C /* KVLeaderBoardViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KVLeaderBoardViewController.h; sourceTree = "<group>"; };
+		512123D61CD17E9800E9046C /* KVLeaderBoardViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KVLeaderBoardViewController.m; sourceTree = "<group>"; };
+		512123D71CD17E9800E9046C /* KVMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KVMenuViewController.h; sourceTree = "<group>"; };
+		512123D81CD17E9800E9046C /* KVMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KVMenuViewController.m; sourceTree = "<group>"; };
+		512123DD1CD17EAC00E9046C /* KVGameScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KVGameScene.h; sourceTree = "<group>"; };
+		512123DE1CD17EAC00E9046C /* KVGameScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KVGameScene.m; sourceTree = "<group>"; };
+		512123DF1CD17EAC00E9046C /* KVGameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = KVGameScene.sks; sourceTree = "<group>"; };
+		512123E01CD17EAC00E9046C /* KVLoseScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KVLoseScene.h; sourceTree = "<group>"; };
+		512123E11CD17EAC00E9046C /* KVLoseScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KVLoseScene.m; sourceTree = "<group>"; };
+		512123E51CD17EC200E9046C /* SKLabelNode+KVLabelAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SKLabelNode+KVLabelAdditions.h"; sourceTree = "<group>"; };
+		512123E61CD17EC200E9046C /* SKLabelNode+KVLabelAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "SKLabelNode+KVLabelAdditions.m"; sourceTree = "<group>"; };
+		512123E71CD17EC200E9046C /* UIImage+KVImageAssets.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+KVImageAssets.h"; sourceTree = "<group>"; };
+		512123E81CD17EC200E9046C /* UIImage+KVImageAssets.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+KVImageAssets.m"; sourceTree = "<group>"; };
 		BF3787431CC99DEE006C1122 /* KVConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KVConstants.h; sourceTree = "<group>"; };
 		BF3787441CC99DEE006C1122 /* KVConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KVConstants.m; sourceTree = "<group>"; };
 		BF68D08D1CC98C480082B447 /* KVFood.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KVFood.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -77,52 +80,54 @@
 		BF37873D1CC99043006C1122 /* GameScenes */ = {
 			isa = PBXGroup;
 			children = (
-				5A287F141CD11EC5004EC7D0 /* KVGameScene.h */,
-				5A287F151CD11EC5004EC7D0 /* KVGameScene.m */,
-				5A287F161CD11EC5004EC7D0 /* KVGameScene.sks */,
-				5A287F171CD11EC5004EC7D0 /* KVLoseScene.h */,
-				5A287F181CD11EC5004EC7D0 /* KVLoseScene.m */,
+				512123DD1CD17EAC00E9046C /* KVGameScene.h */,
+				512123DE1CD17EAC00E9046C /* KVGameScene.m */,
+				512123DF1CD17EAC00E9046C /* KVGameScene.sks */,
+				512123E01CD17EAC00E9046C /* KVLoseScene.h */,
+				512123E11CD17EAC00E9046C /* KVLoseScene.m */,
 			);
-			name = GameScenes;
+			path = GameScenes;
 			sourceTree = "<group>";
 		};
 		BF37873E1CC9904D006C1122 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				5A287F081CD11EA3004EC7D0 /* KVCreditsViewController.h */,
-				5A287F091CD11EA3004EC7D0 /* KVCreditsViewController.m */,
-				5A287F0A1CD11EA3004EC7D0 /* KVGameViewController.h */,
-				5A287F0B1CD11EA3004EC7D0 /* KVGameViewController.m */,
-				5A287F0C1CD11EA3004EC7D0 /* KVLeaderBoardViewController.h */,
-				5A287F0D1CD11EA3004EC7D0 /* KVLeaderBoardViewController.m */,
-				5A287F0E1CD11EA3004EC7D0 /* KVMenuViewController.h */,
-				5A287F0F1CD11EA3004EC7D0 /* KVMenuViewController.m */,
+				512123D11CD17E9800E9046C /* KVCreditsViewController.h */,
+				512123D21CD17E9800E9046C /* KVCreditsViewController.m */,
+				512123D31CD17E9800E9046C /* KVGameViewController.h */,
+				512123D41CD17E9800E9046C /* KVGameViewController.m */,
+				512123D51CD17E9800E9046C /* KVLeaderBoardViewController.h */,
+				512123D61CD17E9800E9046C /* KVLeaderBoardViewController.m */,
+				512123D71CD17E9800E9046C /* KVMenuViewController.h */,
+				512123D81CD17E9800E9046C /* KVMenuViewController.m */,
 			);
-			name = ViewControllers;
+			path = ViewControllers;
 			sourceTree = "<group>";
 		};
 		BF37873F1CC9905A006C1122 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				5A287F1C1CD11EE5004EC7D0 /* KVEnemyNode.h */,
-				5A287F1D1CD11EE5004EC7D0 /* KVEnemyNode.m */,
-				5A287F1E1CD11EE5004EC7D0 /* KVPlayerNode.h */,
-				5A287F1F1CD11EE5004EC7D0 /* KVPlayerNode.m */,
-				5A287F221CD11F01004EC7D0 /* KVGameStats.h */,
-				5A287F231CD11F01004EC7D0 /* KVGameStats.m */,
+				512123C51CD17E8300E9046C /* KVEnemyNode.h */,
+				512123C61CD17E8300E9046C /* KVEnemyNode.m */,
+				512123C71CD17E8300E9046C /* KVGameStats.h */,
+				512123C81CD17E8300E9046C /* KVGameStats.m */,
+				512123C91CD17E8300E9046C /* KVPlayerNode.h */,
+				512123CA1CD17E8300E9046C /* KVPlayerNode.m */,
+				512123CB1CD17E8300E9046C /* KVScoreNode.h */,
+				512123CC1CD17E8300E9046C /* KVScoreNode.m */,
 			);
-			name = Models;
+			path = Models;
 			sourceTree = "<group>";
 		};
 		BF37874E1CC9CDB1006C1122 /* Categories */ = {
 			isa = PBXGroup;
 			children = (
-				5A287F051CD11E65004EC7D0 /* SKLabelNode+KVLabelAdditions.h */,
-				5A287F061CD11E65004EC7D0 /* SKLabelNode+KVLabelAdditions.m */,
-				5A287F251CD12269004EC7D0 /* UIImage+KVImageAssets.h */,
-				5A287F261CD12269004EC7D0 /* UIImage+KVImageAssets.m */,
+				512123E51CD17EC200E9046C /* SKLabelNode+KVLabelAdditions.h */,
+				512123E61CD17EC200E9046C /* SKLabelNode+KVLabelAdditions.m */,
+				512123E71CD17EC200E9046C /* UIImage+KVImageAssets.h */,
+				512123E81CD17EC200E9046C /* UIImage+KVImageAssets.m */,
 			);
-			name = Categories;
+			path = Categories;
 			sourceTree = "<group>";
 		};
 		BF68D0841CC98C480082B447 = {
@@ -229,7 +234,7 @@
 				BF68D0A51CC98C490082B447 /* LaunchScreen.storyboard in Resources */,
 				BF68D0A21CC98C490082B447 /* Assets.xcassets in Resources */,
 				BF68D0A01CC98C490082B447 /* Main.storyboard in Resources */,
-				5A287F1A1CD11EC5004EC7D0 /* KVGameScene.sks in Resources */,
+				512123E31CD17EAC00E9046C /* KVGameScene.sks in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -240,19 +245,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5A287F121CD11EA3004EC7D0 /* KVLeaderBoardViewController.m in Sources */,
-				5A287F191CD11EC5004EC7D0 /* KVGameScene.m in Sources */,
-				5A287F241CD11F01004EC7D0 /* KVGameStats.m in Sources */,
-				5A287F101CD11EA3004EC7D0 /* KVCreditsViewController.m in Sources */,
+				512123CD1CD17E8300E9046C /* KVEnemyNode.m in Sources */,
+				512123E21CD17EAC00E9046C /* KVGameScene.m in Sources */,
+				512123D01CD17E8300E9046C /* KVScoreNode.m in Sources */,
+				512123DA1CD17E9800E9046C /* KVGameViewController.m in Sources */,
 				BF68D0951CC98C480082B447 /* AppDelegate.m in Sources */,
-				5A287F131CD11EA3004EC7D0 /* KVMenuViewController.m in Sources */,
-				5A287F071CD11E65004EC7D0 /* SKLabelNode+KVLabelAdditions.m in Sources */,
-				5A287F211CD11EE5004EC7D0 /* KVPlayerNode.m in Sources */,
-				5A287F1B1CD11EC5004EC7D0 /* KVLoseScene.m in Sources */,
-				5A287F111CD11EA3004EC7D0 /* KVGameViewController.m in Sources */,
-				5A287F201CD11EE5004EC7D0 /* KVEnemyNode.m in Sources */,
-				5A287F271CD12269004EC7D0 /* UIImage+KVImageAssets.m in Sources */,
+				512123CE1CD17E8300E9046C /* KVGameStats.m in Sources */,
+				512123E91CD17EC200E9046C /* SKLabelNode+KVLabelAdditions.m in Sources */,
+				512123E41CD17EAC00E9046C /* KVLoseScene.m in Sources */,
+				512123CF1CD17E8300E9046C /* KVPlayerNode.m in Sources */,
+				512123DC1CD17E9800E9046C /* KVMenuViewController.m in Sources */,
 				BF3787451CC99DEE006C1122 /* KVConstants.m in Sources */,
+				512123DB1CD17E9800E9046C /* KVLeaderBoardViewController.m in Sources */,
+				512123EA1CD17EC200E9046C /* UIImage+KVImageAssets.m in Sources */,
+				512123D91CD17E9800E9046C /* KVCreditsViewController.m in Sources */,
 				BF68D0921CC98C480082B447 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

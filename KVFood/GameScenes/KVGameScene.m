@@ -11,16 +11,18 @@
 #import "KVPlayerNode.h"
 #import "KVEnemyNode.h"
 #import "KVConstants.h"
+#import "KVScoreNode.h"
 #include <stdlib.h>
 
 @interface KVGameScene () <SKPhysicsContactDelegate>
 
-@property(nonatomic) BOOL gameIsPaused;
+@property (nonatomic) BOOL gameIsPaused;
 
-@property(nonatomic) NSTimeInterval lastSpawnTimeInterval;
-@property(nonatomic) NSTimeInterval lastUpdateTimeInterval;
+@property (nonatomic) NSTimeInterval lastSpawnTimeInterval;
+@property (nonatomic) NSTimeInterval lastUpdateTimeInterval;
 
-@property(nonatomic) KVPlayerNode *player;
+@property (nonatomic) KVPlayerNode *player;
+@property (nonatomic) KVScoreNode *scoreNode;
 
 @end
 
@@ -31,12 +33,13 @@
     [self createPhysicsWorld];
     
     CGPoint midPoint = CGPointMake(CGRectGetMidX(self.frame), CGRectGetMidY(self.frame));
+    // TODO: Subclass this?
     // Adding a background node
     SKSpriteNode *backgroundNode = [SKSpriteNode spriteNodeWithImageNamed:@"background"];
     backgroundNode.size = self.frame.size;
     backgroundNode.position = midPoint;
     backgroundNode.alpha = 0.75;
-    backgroundNode.zPosition = 0;
+    backgroundNode.zPosition = KVZPositionTypeBackground;
     [self addChild:backgroundNode];
     
     // Adding the player (pizza)
@@ -44,6 +47,12 @@
     self.player.xScale = 0.8;
     self.player.yScale = 0.8;
     [self addChild:self.player];
+
+    // TODO: Subclass this?
+    // Adding the score
+    self.scoreNode = [KVScoreNode zeroScoreNode];
+    self.scoreNode.position = CGPointMake(CGRectGetWidth(self.frame) / 9, CGRectGetHeight(self.frame) / 6); // TODO: Make this better
+    [self addChild:self.scoreNode];
 }
 
 - (void)createPhysicsWorld {
@@ -76,39 +85,6 @@
     int actualDuration = (arc4random() % rangeDuration) + minDuration;
     
     return actualDuration;
-}
-
-- (CGFloat)rotationForSpawnPoint:(CGPoint)point {
-    CGPoint origin = CGPointMake(self.frame.size.width / 2, self.frame.size.height / 2);
-    CGFloat distance = sqrt(point.x * point.x + point.y * point.y);
-    CGFloat xVelocity = point.x - origin.x;
-    CGFloat yVelocity = point.y - origin.y;
-    CGFloat radians = fabs(xVelocity / distance);
-    
-    NSLog(@"%f %f", xVelocity, yVelocity);
-    CGFloat rotation;
-    // 1
-    if (xVelocity > 0 && yVelocity > 0) {
-        NSLog(@"FIRST");
-        rotation = M_PI / 2 + radians;
-    }
-    // 2
-    else if (xVelocity < 0 && yVelocity > 0) {
-        NSLog(@"SECOND");
-        rotation = - M_PI / 2 - radians;
-    }
-    // 3
-    else if (xVelocity < 0 && yVelocity < 0) {
-        NSLog(@"THIRD");
-        rotation = radians - M_PI / 2;
-    }
-    // 4
-    else {
-        NSLog(@"FOURTH");
-        rotation = M_PI / 2 - radians;
-    }
-    
-    return rotation;
 }
 
 #pragma mark - Update methods
@@ -176,6 +152,9 @@
         else if ([node.name isEqualToString:@"Enemy"]) {
             KVEnemyNode *enemy = (KVEnemyNode *)node;
             [enemy performEnemyDamagedByPlayerAction];
+            if (!enemy.healthPoints) {
+                [self.scoreNode updateScoreByPoints:enemy.pointValue];
+            }
         }
     }
 }
@@ -214,10 +193,10 @@
 
 //Actions for Enemy hitting Player
 - (void)enemy:(SKSpriteNode *)enemy didCollideWithPlayer:(SKSpriteNode *)player {
+    KVEnemyNode *enemyNode = (KVEnemyNode *)enemy;
     //Deduct health
-    //Update Scores
     //Add removal logic
-    [enemy removeFromParent];
+    [enemyNode removeFromParent];
 //    self.player.healthPoints = self.player.healthPoints - 1;
     
     if (self.player.healthPoints == 0) {
