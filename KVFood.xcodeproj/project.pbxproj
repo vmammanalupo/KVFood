@@ -10,7 +10,6 @@
 		5A287F071CD11E65004EC7D0 /* SKLabelNode+KVLabelAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A287F061CD11E65004EC7D0 /* SKLabelNode+KVLabelAdditions.m */; };
 		5A287F101CD11EA3004EC7D0 /* KVCreditsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A287F091CD11EA3004EC7D0 /* KVCreditsViewController.m */; };
 		5A287F111CD11EA3004EC7D0 /* KVGameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A287F0B1CD11EA3004EC7D0 /* KVGameViewController.m */; };
-		5A287F121CD11EA3004EC7D0 /* KVLeaderBoardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A287F0D1CD11EA3004EC7D0 /* KVLeaderBoardViewController.m */; };
 		5A287F131CD11EA3004EC7D0 /* KVMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A287F0F1CD11EA3004EC7D0 /* KVMenuViewController.m */; };
 		5A287F191CD11EC5004EC7D0 /* KVGameScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A287F151CD11EC5004EC7D0 /* KVGameScene.m */; };
 		5A287F1A1CD11EC5004EC7D0 /* KVGameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 5A287F161CD11EC5004EC7D0 /* KVGameScene.sks */; };
@@ -35,8 +34,6 @@
 		5A287F091CD11EA3004EC7D0 /* KVCreditsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KVCreditsViewController.m; path = ViewControllers/KVCreditsViewController.m; sourceTree = "<group>"; };
 		5A287F0A1CD11EA3004EC7D0 /* KVGameViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KVGameViewController.h; path = ViewControllers/KVGameViewController.h; sourceTree = "<group>"; };
 		5A287F0B1CD11EA3004EC7D0 /* KVGameViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KVGameViewController.m; path = ViewControllers/KVGameViewController.m; sourceTree = "<group>"; };
-		5A287F0C1CD11EA3004EC7D0 /* KVLeaderBoardViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KVLeaderBoardViewController.h; path = ViewControllers/KVLeaderBoardViewController.h; sourceTree = "<group>"; };
-		5A287F0D1CD11EA3004EC7D0 /* KVLeaderBoardViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KVLeaderBoardViewController.m; path = ViewControllers/KVLeaderBoardViewController.m; sourceTree = "<group>"; };
 		5A287F0E1CD11EA3004EC7D0 /* KVMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KVMenuViewController.h; path = ViewControllers/KVMenuViewController.h; sourceTree = "<group>"; };
 		5A287F0F1CD11EA3004EC7D0 /* KVMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KVMenuViewController.m; path = ViewControllers/KVMenuViewController.m; sourceTree = "<group>"; };
 		5A287F141CD11EC5004EC7D0 /* KVGameScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KVGameScene.h; path = GameScenes/KVGameScene.h; sourceTree = "<group>"; };
@@ -96,8 +93,6 @@
 				5A287F091CD11EA3004EC7D0 /* KVCreditsViewController.m */,
 				5A287F0A1CD11EA3004EC7D0 /* KVGameViewController.h */,
 				5A287F0B1CD11EA3004EC7D0 /* KVGameViewController.m */,
-				5A287F0C1CD11EA3004EC7D0 /* KVLeaderBoardViewController.h */,
-				5A287F0D1CD11EA3004EC7D0 /* KVLeaderBoardViewController.m */,
 				5A287F0E1CD11EA3004EC7D0 /* KVMenuViewController.h */,
 				5A287F0F1CD11EA3004EC7D0 /* KVMenuViewController.m */,
 			);
@@ -258,7 +253,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5A287F121CD11EA3004EC7D0 /* KVLeaderBoardViewController.m in Sources */,
 				5A287F191CD11EC5004EC7D0 /* KVGameScene.m in Sources */,
 				BF6ACA321CD17D0A009E205A /* KVGameCenterClient.m in Sources */,
 				5A287F101CD11EA3004EC7D0 /* KVCreditsViewController.m in Sources */,
