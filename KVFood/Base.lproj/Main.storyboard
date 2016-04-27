@@ -23,6 +23,7 @@
                                     <constraint firstAttribute="width" constant="150" id="Ef3-gc-uco"/>
                                     <constraint firstAttribute="height" constant="30" id="lcz-Ke-Lv5"/>
                                 </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <state key="normal" title="Play Game"/>
                                 <connections>
                                     <segue destination="BV1-FR-VrT" kind="show" id="38W-7g-SWc"/>

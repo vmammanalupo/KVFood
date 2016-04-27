@@ -10,6 +10,12 @@
 
 #define kArrowNodes 1
 
+typedef NS_ENUM(NSInteger, KVZPositionType) {
+    KVZPositionTypeBackground,
+    KVZPositionGameNode,
+    KVZPositionTypeHUD,
+};
+
 @interface KVConstants : NSObject
 
 typedef NS_OPTIONS(uint32_t, KVCollisionCategory) {

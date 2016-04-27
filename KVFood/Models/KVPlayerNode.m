@@ -14,7 +14,7 @@
 - (instancetype)initAtPosition:(CGPoint)position {
     if (self = [super init]) {
         self.position = position;
-        self.zPosition = 1;
+        self.zPosition = KVZPositionGameNode;
         
         SKSpriteNode *player = [SKSpriteNode spriteNodeWithImageNamed:@"pizza2"];
         [self addChild:player];

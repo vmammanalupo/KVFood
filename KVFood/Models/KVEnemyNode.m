@@ -23,10 +23,8 @@
     if (type == ENEMY_HAND) {
 #if kArrowNodes
         node = [KVEnemyNode spriteNodeWithImageNamed:@"arrow"];
-        node.color = [UIColor redColor];
         node.xScale = 0.3;
         node.yScale = 0.3;
-        node.colorBlendFactor = 1.0;
 #else
         node = [KVEnemyNode spriteNodeWithImageNamed:@"arm"];
 #endif
@@ -36,10 +34,8 @@
     else if (type == ENEMY_FORK) {
 #if kArrowNodes
         node = [KVEnemyNode spriteNodeWithImageNamed:@"arrow"];
-        node.color = [UIColor blueColor];
         node.xScale = 0.3;
         node.yScale = 0.3;
-        node.colorBlendFactor = 1.0;
 #else
         node = [KVEnemyNode spriteNodeWithImageNamed:@"fork"];
 #endif
@@ -50,10 +46,8 @@
         //USE KNIFE IMAGE
 #if kArrowNodes
         node = [KVEnemyNode spriteNodeWithImageNamed:@"arrow"];
-        node.color = [UIColor yellowColor];
         node.xScale = 0.3;
         node.yScale = 0.3;
-        node.colorBlendFactor = 1.0;
 #else
         node = [KVEnemyNode spriteNodeWithImageNamed:@"knife"];
 #endif
@@ -61,12 +55,12 @@
         node.pointValue = 15;
     }
     
-    [node setPosition:position];
     [node setName:@"Enemy"];
-    node.zPosition = 1;
+    [node setPosition:position];
     node.spawnPoint = position;
-    
+    node.zPosition = KVZPositionGameNode;
     [node setEnemyType:type];
+    
     node.physicsBody = [SKPhysicsBody bodyWithRectangleOfSize:node.size];
     node.physicsBody.dynamic = YES;
     node.physicsBody.categoryBitMask = KVCollisionCategoryEnemy;
