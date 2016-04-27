@@ -11,6 +11,8 @@
 		518F8D941CD186EB008B9BD6 /* KVGameScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 512123DE1CD17EAC00E9046C /* KVGameScene.m */; };
 		518F8D951CD186EB008B9BD6 /* KVGameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 512123DF1CD17EAC00E9046C /* KVGameScene.sks */; };
 		518F8D961CD186EB008B9BD6 /* KVLoseScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 512123E11CD17EAC00E9046C /* KVLoseScene.m */; };
+		518F8D971CD187A1008B9BD6 /* UIImage+KVImageAssets.m in Sources */ = {isa = PBXBuildFile; fileRef = 512123E81CD17EC200E9046C /* UIImage+KVImageAssets.m */; };
+		518F8D981CD187A5008B9BD6 /* SKLabelNode+KVLabelAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 512123E61CD17EC200E9046C /* SKLabelNode+KVLabelAdditions.m */; };
 		5A287F101CD11EA3004EC7D0 /* (null) in Sources */ = {isa = PBXBuildFile; };
 		5A287F191CD11EC5004EC7D0 /* (null) in Sources */ = {isa = PBXBuildFile; };
 		BF3787451CC99DEE006C1122 /* KVConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = BF3787441CC99DEE006C1122 /* KVConstants.m */; };
@@ -266,10 +268,12 @@
 				5A287F191CD11EC5004EC7D0 /* (null) in Sources */,
 				BF6ACA391CD185E4009E205A /* KVCreditsViewController.m in Sources */,
 				BF6ACA321CD17D0A009E205A /* KVGameCenterClient.m in Sources */,
+				518F8D981CD187A5008B9BD6 /* SKLabelNode+KVLabelAdditions.m in Sources */,
 				BF6ACA3A1CD185E4009E205A /* KVGameViewController.m in Sources */,
 				5A287F101CD11EA3004EC7D0 /* (null) in Sources */,
 				BF68D0951CC98C480082B447 /* AppDelegate.m in Sources */,
 				BF3787451CC99DEE006C1122 /* KVConstants.m in Sources */,
+				518F8D971CD187A1008B9BD6 /* UIImage+KVImageAssets.m in Sources */,
 				BF68D0921CC98C480082B447 /* main.m in Sources */,
 				518F8D941CD186EB008B9BD6 /* KVGameScene.m in Sources */,
 			);
