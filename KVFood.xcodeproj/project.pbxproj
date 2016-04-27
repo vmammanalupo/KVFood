@@ -17,7 +17,6 @@
 		5A287F1B1CD11EC5004EC7D0 /* KVLoseScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A287F181CD11EC5004EC7D0 /* KVLoseScene.m */; };
 		5A287F201CD11EE5004EC7D0 /* KVEnemyNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A287F1D1CD11EE5004EC7D0 /* KVEnemyNode.m */; };
 		5A287F211CD11EE5004EC7D0 /* KVPlayerNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A287F1F1CD11EE5004EC7D0 /* KVPlayerNode.m */; };
-		5A287F241CD11F01004EC7D0 /* KVGameStats.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A287F231CD11F01004EC7D0 /* KVGameStats.m */; };
 		5A287F271CD12269004EC7D0 /* UIImage+KVImageAssets.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A287F261CD12269004EC7D0 /* UIImage+KVImageAssets.m */; };
 		BF3787451CC99DEE006C1122 /* KVConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = BF3787441CC99DEE006C1122 /* KVConstants.m */; };
 		BF68D0921CC98C480082B447 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BF68D0911CC98C480082B447 /* main.m */; };
@@ -49,8 +48,6 @@
 		5A287F1D1CD11EE5004EC7D0 /* KVEnemyNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KVEnemyNode.m; path = Models/KVEnemyNode.m; sourceTree = "<group>"; };
 		5A287F1E1CD11EE5004EC7D0 /* KVPlayerNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KVPlayerNode.h; path = Models/KVPlayerNode.h; sourceTree = "<group>"; };
 		5A287F1F1CD11EE5004EC7D0 /* KVPlayerNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KVPlayerNode.m; path = Models/KVPlayerNode.m; sourceTree = "<group>"; };
-		5A287F221CD11F01004EC7D0 /* KVGameStats.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KVGameStats.h; path = Models/KVGameStats.h; sourceTree = "<group>"; };
-		5A287F231CD11F01004EC7D0 /* KVGameStats.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KVGameStats.m; path = Models/KVGameStats.m; sourceTree = "<group>"; };
 		5A287F251CD12269004EC7D0 /* UIImage+KVImageAssets.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIImage+KVImageAssets.h"; path = "Categories/UIImage+KVImageAssets.h"; sourceTree = "<group>"; };
 		5A287F261CD12269004EC7D0 /* UIImage+KVImageAssets.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIImage+KVImageAssets.m"; path = "Categories/UIImage+KVImageAssets.m"; sourceTree = "<group>"; };
 		BF3787431CC99DEE006C1122 /* KVConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KVConstants.h; sourceTree = "<group>"; };
@@ -114,8 +111,6 @@
 				5A287F1D1CD11EE5004EC7D0 /* KVEnemyNode.m */,
 				5A287F1E1CD11EE5004EC7D0 /* KVPlayerNode.h */,
 				5A287F1F1CD11EE5004EC7D0 /* KVPlayerNode.m */,
-				5A287F221CD11F01004EC7D0 /* KVGameStats.h */,
-				5A287F231CD11F01004EC7D0 /* KVGameStats.m */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -151,12 +146,12 @@
 		BF68D08F1CC98C480082B447 /* KVFood */ = {
 			isa = PBXGroup;
 			children = (
-				BF6ACA2F1CD17CEE009E205A /* Game Center */,
 				BF68D0931CC98C480082B447 /* AppDelegate.h */,
 				BF68D0941CC98C480082B447 /* AppDelegate.m */,
 				BF3787431CC99DEE006C1122 /* KVConstants.h */,
 				BF3787441CC99DEE006C1122 /* KVConstants.m */,
 				BF68D09E1CC98C490082B447 /* Main.storyboard */,
+				BF6ACA2F1CD17CEE009E205A /* Game Center */,
 				BF37874E1CC9CDB1006C1122 /* Categories */,
 				BF37873F1CC9905A006C1122 /* Models */,
 				BF37873E1CC9904D006C1122 /* ViewControllers */,
@@ -266,7 +261,6 @@
 				5A287F121CD11EA3004EC7D0 /* KVLeaderBoardViewController.m in Sources */,
 				5A287F191CD11EC5004EC7D0 /* KVGameScene.m in Sources */,
 				BF6ACA321CD17D0A009E205A /* KVGameCenterClient.m in Sources */,
-				5A287F241CD11F01004EC7D0 /* KVGameStats.m in Sources */,
 				5A287F101CD11EA3004EC7D0 /* KVCreditsViewController.m in Sources */,
 				BF68D0951CC98C480082B447 /* AppDelegate.m in Sources */,
 				5A287F131CD11EA3004EC7D0 /* KVMenuViewController.m in Sources */,
