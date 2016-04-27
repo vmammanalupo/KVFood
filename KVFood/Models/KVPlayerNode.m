@@ -16,7 +16,7 @@
         self.position = position;
         self.zPosition = 1;
         
-        SKSpriteNode *player = [SKSpriteNode spriteNodeWithImageNamed:@"Spaceship"];
+        SKSpriteNode *player = [SKSpriteNode spriteNodeWithImageNamed:@"pizza2"];
         [self addChild:player];
         
         self.physicsBody = [SKPhysicsBody bodyWithCircleOfRadius:player.size.width/2];

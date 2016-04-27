@@ -9,6 +9,7 @@
 #import "KVGameViewController.h"
 #import <SpriteKit/SpriteKit.h>
 #import "KVGameScene.h"
+#import "UIImage+KVImageAssets.h"
 
 @interface KVGameViewController ()
 
@@ -29,7 +30,10 @@
     // Create and configure the scene.
     KVGameScene *scene = [KVGameScene nodeWithFileNamed:@"KVGameScene"];
     scene.scaleMode = SKSceneScaleModeAspectFill;
-    
+    UIImageView *backgroundImageView = [[UIImageView alloc] initWithImage:[UIImage kv_backgroundTable]];
+    backgroundImageView.contentMode = UIViewContentModeScaleAspectFill;
+    backgroundImageView.frame = scene.frame;
+    [scene.view addSubview:backgroundImageView];
     // Present the scene.
     [skView presentScene:scene];
 }

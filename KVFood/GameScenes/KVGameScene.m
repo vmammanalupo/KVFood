@@ -29,10 +29,20 @@
 - (void)didMoveToView:(SKView *)view {
     self.gameIsPaused = NO;
     [self createPhysicsWorld];
-    self.player = [[KVPlayerNode alloc] initAtPosition:CGPointMake(self.frame.size.width/2, self.frame.size.height/2)];
     
-    self.player.xScale = 0.3;
-    self.player.yScale = 0.3;
+    CGPoint midPoint = CGPointMake(CGRectGetMidX(self.frame), CGRectGetMidY(self.frame));
+    // Adding a background node
+    SKSpriteNode *backgroundNode = [SKSpriteNode spriteNodeWithImageNamed:@"background"];
+    backgroundNode.size = self.frame.size;
+    backgroundNode.position = midPoint;
+    backgroundNode.alpha = 0.75;
+    backgroundNode.zPosition = 0;
+    [self addChild:backgroundNode];
+    
+    // Adding the player (pizza)
+    self.player = [[KVPlayerNode alloc] initAtPosition:midPoint];
+    self.player.xScale = 0.8;
+    self.player.yScale = 0.8;
     [self addChild:self.player];
 }
 
@@ -205,7 +215,7 @@
     //Update Scores
     //Add removal logic
     [enemy removeFromParent];
-    self.player.healthPoints = self.player.healthPoints - 1;
+//    self.player.healthPoints = self.player.healthPoints - 1;
     
     if (self.player.healthPoints == 0) {
         SKAction * loseAction = [SKAction runBlock:^{
