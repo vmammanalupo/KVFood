@@ -18,33 +18,28 @@
 }
 
 + (KVEnemyNode *)createEnemyAtPosition:(CGPoint)position ofType:(EnemyType)type {
-    KVEnemyNode *node = [KVEnemyNode spriteNodeWithImageNamed:@"Spaceship"];
+    KVEnemyNode *node;
+    // TODO: Edit assets to all point right. That way we can standardize rotation.
     if (type == ENEMY_HAND) {
+        node = [KVEnemyNode spriteNodeWithImageNamed:@"arm"];
         node.healthPoints = 1;
         node.pointValue = 5;
-        //USE HAND IMAGE
-        node.color = [UIColor colorWithRed:1.0 green:0 blue:0 alpha:1.0];
-        node.colorBlendFactor = 1.0f;
     }
     else if (type == ENEMY_FORK) {
-        //USE FORK IMAGE
+        node = [KVEnemyNode spriteNodeWithImageNamed:@"fork"];
         node.healthPoints = 2;
         node.pointValue = 10;
-        node.color = [UIColor colorWithRed:0 green:1.0 blue:0 alpha:1.0];
-        node.colorBlendFactor = 1.0f;
     }
     else {
         //USE KNIFE IMAGE
+        node = [KVEnemyNode spriteNodeWithImageNamed:@"knife"];
         node.healthPoints = 3;
         node.pointValue = 15;
-        node.color = [UIColor colorWithRed:0 green:0 blue:1.0 alpha:1.0];
-        node.colorBlendFactor = 1.0f;
     }
     
     [node setPosition:position];
     [node setName:@"Enemy"];
-    node.xScale = 0.3;
-    node.yScale = 0.3;
+    node.zPosition = 1;
     node.spawnPoint = position;
     
     [node setEnemyType:type];
