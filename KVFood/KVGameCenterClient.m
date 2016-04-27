@@ -53,6 +53,23 @@ static KVGameCenterClient *sharedInstance;
     }];
 }
 
+-(void)getPlayerHighScore {
+    GKLeaderboard *leaderboardRequest = [[GKLeaderboard alloc] init];
+    
+    leaderboardRequest.identifier = self.leaderBoardIdentifier;
+    
+    if (leaderboardRequest != nil) {
+        [leaderboardRequest loadScoresWithCompletionHandler:^(NSArray *scores, NSError *error){
+            if (error != nil) {
+                //Handle error
+            }
+//            else{
+//                [self onLocalPlayerScoreReceived:leaderboardRequest.localPlayerScore];
+//            }
+        }];
+    }
+}
+
 - (void)reportScore {
     GKScore *score = [[GKScore alloc] initWithLeaderboardIdentifier:self.leaderBoardIdentifier];
     score.value = self.highScore.value;
