@@ -140,17 +140,20 @@
 - (void)addEnemy {
     CGPoint spawnPoint = [self randomSpawnPoint];
     KVEnemyNode *enemy = [KVEnemyNode createEnemyAtPosition:spawnPoint ofType:arc4random_uniform(3)];
-    enemy.zRotation = [self rotationForSpawnPoint:spawnPoint]; // TODO: Refactor this method
     [self addChild:enemy];
-    
+    // Rotate towards player
+    CGFloat angle = atan2(spawnPoint.y - self.player.position.y, spawnPoint.x - self.player.position.x) + M_PI;
+    SKAction *rotateAction = [SKAction rotateToAngle:angle duration:0.0];
+    // Move towards player
     int randomDuration = [self randomizedDurationFromTimeRangeOfMinimum:2 andMaximum:4];
-    SKAction *enemyAction =[SKAction moveTo:self.player.position duration:randomDuration];
-    
-    [enemy runAction:enemyAction completion:^{
-        if (self) {
-            [enemy removeFromParent];
-        }
-    }];
+    SKAction *moveAction =[SKAction moveTo:self.player.position duration:randomDuration];
+    SKAction *spawnActionSequence = [SKAction sequence:@[rotateAction, moveAction]];
+    [enemy runAction:spawnActionSequence
+          completion:^{
+              if (self) {
+                  [enemy removeFromParent];
+              }
+          }];
 }
 
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
