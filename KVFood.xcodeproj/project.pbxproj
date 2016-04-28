@@ -28,6 +28,11 @@
 		BF6ACA3B1CD185E4009E205A /* KVMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BF6ACA381CD185E4009E205A /* KVMenuViewController.m */; };
 		BF6ACA401CD18689009E205A /* KVEnemyNode.m in Sources */ = {isa = PBXBuildFile; fileRef = BF6ACA3D1CD18689009E205A /* KVEnemyNode.m */; };
 		BF6ACA411CD18689009E205A /* KVPlayerNode.m in Sources */ = {isa = PBXBuildFile; fileRef = BF6ACA3F1CD18689009E205A /* KVPlayerNode.m */; };
+		BF6ACA461CD1B2BC009E205A /* Slap.wav in Resources */ = {isa = PBXBuildFile; fileRef = BF6ACA421CD1B2BC009E205A /* Slap.wav */; };
+		BF6ACA471CD1B2BC009E205A /* Grunt.wav in Resources */ = {isa = PBXBuildFile; fileRef = BF6ACA431CD1B2BC009E205A /* Grunt.wav */; };
+		BF6ACA491CD1B2BC009E205A /* POL_Cyber_Factory.wav in Resources */ = {isa = PBXBuildFile; fileRef = BF6ACA451CD1B2BC009E205A /* POL_Cyber_Factory.wav */; };
+		BF6ACA4B1CD1B5E2009E205A /* Metal_Clank.wav in Resources */ = {isa = PBXBuildFile; fileRef = BF6ACA4A1CD1B5E2009E205A /* Metal_Clank.wav */; };
+		BF6ACA4D1CD1B8D9009E205A /* ponderosa.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BF6ACA4C1CD1B8D9009E205A /* ponderosa.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -65,6 +70,11 @@
 		BF6ACA3D1CD18689009E205A /* KVEnemyNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KVEnemyNode.m; sourceTree = "<group>"; };
 		BF6ACA3E1CD18689009E205A /* KVPlayerNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KVPlayerNode.h; sourceTree = "<group>"; };
 		BF6ACA3F1CD18689009E205A /* KVPlayerNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KVPlayerNode.m; sourceTree = "<group>"; };
+		BF6ACA421CD1B2BC009E205A /* Slap.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Slap.wav; sourceTree = "<group>"; };
+		BF6ACA431CD1B2BC009E205A /* Grunt.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Grunt.wav; sourceTree = "<group>"; };
+		BF6ACA451CD1B2BC009E205A /* POL_Cyber_Factory.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = POL_Cyber_Factory.wav; sourceTree = "<group>"; };
+		BF6ACA4A1CD1B5E2009E205A /* Metal_Clank.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Metal_Clank.wav; sourceTree = "<group>"; };
+		BF6ACA4C1CD1B8D9009E205A /* ponderosa.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = ponderosa.ttf; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -169,6 +179,11 @@
 		BF68D0901CC98C480082B447 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				BF6ACA4C1CD1B8D9009E205A /* ponderosa.ttf */,
+				BF6ACA4A1CD1B5E2009E205A /* Metal_Clank.wav */,
+				BF6ACA421CD1B2BC009E205A /* Slap.wav */,
+				BF6ACA431CD1B2BC009E205A /* Grunt.wav */,
+				BF6ACA451CD1B2BC009E205A /* POL_Cyber_Factory.wav */,
 				BF68D0911CC98C480082B447 /* main.m */,
 			);
 			name = "Supporting Files";
@@ -247,9 +262,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				BF68D0A51CC98C490082B447 /* LaunchScreen.storyboard in Resources */,
+				BF6ACA471CD1B2BC009E205A /* Grunt.wav in Resources */,
+				BF6ACA461CD1B2BC009E205A /* Slap.wav in Resources */,
 				BF68D0A21CC98C490082B447 /* Assets.xcassets in Resources */,
 				BF68D0A01CC98C490082B447 /* Main.storyboard in Resources */,
 				518F8D951CD186EB008B9BD6 /* KVGameScene.sks in Resources */,
+				BF6ACA4B1CD1B5E2009E205A /* Metal_Clank.wav in Resources */,
+				BF6ACA491CD1B2BC009E205A /* POL_Cyber_Factory.wav in Resources */,
+				BF6ACA4D1CD1B8D9009E205A /* ponderosa.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

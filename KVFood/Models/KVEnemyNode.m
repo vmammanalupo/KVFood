@@ -10,6 +10,13 @@
 #import "KVConstants.h"
 #import "SKLabelNode+KVLabelAdditions.h"
 
+@interface KVEnemyNode ()
+
+@property (nonatomic) SKAction *damageSound;
+@property (nonatomic) SKAction *deathSound;
+
+@end
+
 @implementation KVEnemyNode
 
 - (BOOL)collisionWithPlayer:(SKNode *)player {
@@ -30,6 +37,8 @@
 #endif
         node.healthPoints = 1;
         node.pointValue = 5;
+        node.damageSound = [SKAction playSoundFileNamed:@"Slap.wav" waitForCompletion:NO];
+        node.deathSound = [SKAction playSoundFileNamed:@"Grunt.wav" waitForCompletion:NO];
     }
     else if (type == ENEMY_FORK) {
 #if kArrowNodes
@@ -41,6 +50,8 @@
 #endif
         node.healthPoints = 2;
         node.pointValue = 10;
+        node.damageSound = [SKAction playSoundFileNamed:@"Metal_Clank.wav" waitForCompletion:NO];
+        node.deathSound = [SKAction playSoundFileNamed:@"Metal_Clank.wav" waitForCompletion:NO];
     }
     else {
         //USE KNIFE IMAGE
@@ -53,6 +64,8 @@
 #endif
         node.healthPoints = 3;
         node.pointValue = 15;
+        node.damageSound = [SKAction playSoundFileNamed:@"Metal_Clank.wav" waitForCompletion:NO];
+        node.deathSound = [SKAction playSoundFileNamed:@"Metal_Clank.wav" waitForCompletion:NO];
     }
     
     [node setName:@"Enemy"];
@@ -71,18 +84,15 @@
 
 - (void)performEnemyDamagedByPlayerAction {
     self.healthPoints --;
-    //Play damage sound effect
-    //        [self runAction:[SKAction playSoundFileNamed:kHeroShipDamagedSound waitForCompletion:NO]];
     SKAction *colorize = [SKAction colorizeWithColor:[UIColor redColor] colorBlendFactor:1 duration:0.5];
     SKAction *reverse = [colorize reversedAction];
     SKAction *colorizeAndReverse = [SKAction sequence:@[colorize, reverse]];
     SKAction *repeatColorizeAndReverse = [SKAction repeatAction:colorizeAndReverse count:2];
     if (self.healthPoints > 0) {
-        //Play damage sound effect
         [self removeAllActions];
         SKAction *damagedKnockBack = [SKAction moveBy:[self vectorForDamagedKnockBackWithMagnitude:0.5] duration:0.2];
         
-        SKAction *colorizedDamageKnockBack = [SKAction group:@[colorizeAndReverse, damagedKnockBack]];
+        SKAction *colorizedDamageKnockBack = [SKAction group:@[colorizeAndReverse, self.damageSound, damagedKnockBack]];
         
         CGPoint sceneCenter =  CGPointMake(self.scene.frame.size.width/2, self.scene.frame.size.height/2);
         
@@ -92,7 +102,6 @@
     }
     //Dead
     else {
-        //Play die sound effect
         //Stop enemy in its tracks
         [self removeAllActions];
         [SKLabelNode addPointsAcquiredLabelToScene:self.scene
@@ -100,7 +109,7 @@
                                         withPoints:[NSString stringWithFormat:@"%d", self.pointValue]];
         SKAction *fadeOut = [SKAction fadeOutWithDuration:1];
         typeof(self) __weak weakSelf = self;
-        [self runAction:[SKAction group:@[repeatColorizeAndReverse, fadeOut]] completion:^{
+        [self runAction:[SKAction group:@[repeatColorizeAndReverse, fadeOut, self.deathSound]] completion:^{
             [weakSelf removeFromParent];
         }];
     }

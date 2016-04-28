@@ -4,6 +4,14 @@
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="ponderosa.ttf">
+            <string>Ponderosa</string>
+            <string>Ponderosa</string>
+            <string>Ponderosa</string>
+            <string>Ponderosa</string>
+        </mutableArray>
+    </customFonts>
     <scenes>
         <!--Menu View Controller-->
         <scene sceneID="Xuw-1r-Jdq">
@@ -18,45 +26,75 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sdk-Ah-MgO">
-                                <rect key="frame" x="430" y="70" width="150" height="30"/>
+                                <rect key="frame" x="406" y="235" width="174" height="30"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="150" id="Ef3-gc-uco"/>
+                                    <constraint firstAttribute="width" constant="174" id="Ef3-gc-uco"/>
                                     <constraint firstAttribute="height" constant="30" id="lcz-Ke-Lv5"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <fontDescription key="fontDescription" name="Ponderosa" family="Ponderosa" pointSize="15"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 <state key="normal" title="Play Game"/>
                                 <connections>
                                     <segue destination="BV1-FR-VrT" kind="show" id="38W-7g-SWc"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TuO-RV-a2A">
-                                <rect key="frame" x="430" y="120" width="150" height="30"/>
+                                <rect key="frame" x="406" y="285" width="174" height="30"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="7YD-wc-8bE"/>
-                                    <constraint firstAttribute="width" constant="150" id="Frb-pc-xAh"/>
+                                    <constraint firstAttribute="width" constant="174" id="Frb-pc-xAh"/>
                                 </constraints>
+                                <fontDescription key="fontDescription" name="Ponderosa" family="Ponderosa" pointSize="15"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 <state key="normal" title="Leaderboards"/>
                                 <connections>
                                     <action selector="pressedLeaderBoard:" destination="JrP-eA-6aP" eventType="touchUpInside" id="V8a-he-RWN"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Qv-FQ-2rY">
-                                <rect key="frame" x="430" y="170" width="150" height="30"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Pizza_Logo" translatesAutoresizingMaskIntoConstraints="NO" id="N32-5w-rQC">
+                                <rect key="frame" x="0.0" y="365" width="340" height="235"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="150" id="Xxm-Tu-qpd"/>
+                                    <constraint firstAttribute="height" constant="235" id="6MX-fq-ZPb"/>
+                                    <constraint firstAttribute="width" constant="340" id="OYZ-5h-TGa"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Za Hero" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TxJ-Vr-O8u">
+                                <rect key="frame" x="181" y="38" width="238" height="49"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="49" id="Fd3-Rz-gTV"/>
+                                    <constraint firstAttribute="width" constant="238" id="tk0-Ds-kTc"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Ponderosa" family="Ponderosa" pointSize="41"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Qv-FQ-2rY">
+                                <rect key="frame" x="406" y="335" width="174" height="30"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="174" id="Xxm-Tu-qpd"/>
                                     <constraint firstAttribute="height" constant="30" id="nKr-kc-HIg"/>
                                 </constraints>
+                                <fontDescription key="fontDescription" name="Ponderosa" family="Ponderosa" pointSize="15"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 <state key="normal" title="Credits"/>
                                 <connections>
                                     <segue destination="MuX-lH-lWk" kind="show" id="jqx-gV-tIS"/>
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="1" green="0.81961477119996351" blue="0.5474165158744424" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
+                            <constraint firstItem="zBA-Pb-vBm" firstAttribute="top" secondItem="N32-5w-rQC" secondAttribute="bottom" id="5G5-VE-GBJ"/>
                             <constraint firstItem="TuO-RV-a2A" firstAttribute="top" secondItem="Sdk-Ah-MgO" secondAttribute="bottom" constant="20" id="5nJ-EC-Nth"/>
+                            <constraint firstItem="TuO-RV-a2A" firstAttribute="centerY" secondItem="FGE-iy-2WD" secondAttribute="centerY" id="6pf-Xg-Xrp"/>
+                            <constraint firstItem="N32-5w-rQC" firstAttribute="leading" secondItem="FGE-iy-2WD" secondAttribute="leading" id="HAI-w2-T7c"/>
+                            <constraint firstItem="TxJ-Vr-O8u" firstAttribute="top" secondItem="0Ae-uR-F7h" secondAttribute="bottom" constant="18" id="UsU-tf-ZXR"/>
                             <constraint firstAttribute="trailing" secondItem="5Qv-FQ-2rY" secondAttribute="trailing" constant="20" id="fpL-YK-YUz"/>
-                            <constraint firstItem="Sdk-Ah-MgO" firstAttribute="top" secondItem="0Ae-uR-F7h" secondAttribute="bottom" constant="50" id="mZr-4e-6qn"/>
+                            <constraint firstItem="TxJ-Vr-O8u" firstAttribute="centerX" secondItem="FGE-iy-2WD" secondAttribute="centerX" id="hsz-up-Nhe"/>
                             <constraint firstAttribute="trailing" secondItem="TuO-RV-a2A" secondAttribute="trailing" constant="20" id="tJ5-z5-zua"/>
                             <constraint firstAttribute="trailing" secondItem="Sdk-Ah-MgO" secondAttribute="trailing" constant="20" id="xxM-It-22z"/>
                             <constraint firstItem="5Qv-FQ-2rY" firstAttribute="top" secondItem="TuO-RV-a2A" secondAttribute="bottom" constant="20" id="zq3-1i-kkx"/>
@@ -64,6 +102,11 @@
                     </view>
                     <navigationItem key="navigationItem" id="GTA-ra-ZVs"/>
                     <nil key="simulatedTopBarMetrics"/>
+                    <connections>
+                        <outlet property="creditsButton" destination="5Qv-FQ-2rY" id="Tm5-9p-aiR"/>
+                        <outlet property="leaderboardsButton" destination="TuO-RV-a2A" id="BW0-hl-5Dd"/>
+                        <outlet property="playGameButton" destination="Sdk-Ah-MgO" id="0C9-ye-kEe"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="i6c-Ui-UHc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -127,4 +170,7 @@
             <point key="canvasLocation" x="234" y="202"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Pizza_Logo" width="280" height="280"/>
+    </resources>
 </document>

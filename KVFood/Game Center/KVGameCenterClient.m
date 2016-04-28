@@ -64,4 +64,21 @@ static KVGameCenterClient *sharedInstance;
     }];
 }
 
+- (void)getLocalPlayerHighScore {
+    GKLeaderboard *leaderboardRequest = [[GKLeaderboard alloc] init];
+    
+    leaderboardRequest.identifier = self.leaderBoardIdentifier;
+    
+    if (leaderboardRequest != nil) {
+        [leaderboardRequest loadScoresWithCompletionHandler:^(NSArray *scores, NSError *error){
+            if (error != nil) {
+                //Handle error
+            }
+            else {
+                //                [delegate onLocalPlayerScoreReceived:leaderboardRequest.localPlayerScore];
+            }
+        }];
+    }
+}
+
 @end
