@@ -102,11 +102,6 @@
                     </view>
                     <navigationItem key="navigationItem" id="GTA-ra-ZVs"/>
                     <nil key="simulatedTopBarMetrics"/>
-                    <connections>
-                        <outlet property="creditsButton" destination="5Qv-FQ-2rY" id="Tm5-9p-aiR"/>
-                        <outlet property="leaderboardsButton" destination="TuO-RV-a2A" id="BW0-hl-5Dd"/>
-                        <outlet property="playGameButton" destination="Sdk-Ah-MgO" id="0C9-ye-kEe"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="i6c-Ui-UHc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
